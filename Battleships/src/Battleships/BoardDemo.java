@@ -6,15 +6,18 @@ public class BoardDemo
     {
         Board b1 = new Board(10,10);
 
+        //Printing out empty board (no ships have placed yet)
         System.out.println(b1.toString());
         System.out.println();
 
+        // Setup the board by placing the ships
         b1.setup();
 
+        //Print the board after placing ships
         System.out.println(b1);
         System.out.println();
 
-        //Dropping some bombs
+        //Dropping some bombs at specific squares on the board
 
         System.out.println("Bombing square x=2, y=0");
         b1.dropBomb(2, 0);
