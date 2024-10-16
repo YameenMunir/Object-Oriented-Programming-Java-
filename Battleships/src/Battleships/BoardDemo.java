@@ -4,6 +4,7 @@ public class BoardDemo
 {
     public static void main(String[] args)
     {
+        //Creating a 10x10 Board
         Board b1 = new Board(10,10);
 
         //Printing out empty board (no ships have placed yet)
