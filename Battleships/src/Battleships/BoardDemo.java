@@ -14,7 +14,7 @@ public class BoardDemo
         System.out.println(b1);
         System.out.println();
 
-        //Drop some bombs
+        //Dropping some bombs
 
         System.out.println("Bombing square x=2, y=0");
         b1.dropBomb(2, 0);
