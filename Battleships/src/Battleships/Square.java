@@ -44,8 +44,9 @@ public class Square
         {
             if(this.isHit())
             {
-                return "*";// Retuns "*" for a hit
-            }else if(this.isMiss())
+                return "*";// Returns "*" for a hit
+            }
+            else if(this.isMiss())
             {
                 return "'"; // Returns "'" for a miss
             }
