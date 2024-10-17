@@ -2,16 +2,17 @@ package Battleships;
 
 public class Board
 {
-    //Attribute of the Board Class
-    // The height and width of the board
+    /*Attribute of the Board Class
+    The height and width of the board*/
     private int height;
     private int width;
-    //A 2D array representing the board, where the cell is an object of the Aquare class
+    //A 2D array representing the board, where the cell is an object of the Square class
     private Square board[][];
 
     //The constructor for the Board class
     public Board(int height, int width)
     {
+        //Initialising the attributes with null values by default
         this.height = height;
         this.width = width;
         this.board = new Square[height][width];
@@ -107,7 +108,7 @@ public class Board
     public String toString()
     {
         final String[] array = toStringArray(true);
-        final StringBuilder builder = new StringBuilder(); // Corrected this line
+        final StringBuilder builder = new StringBuilder();
         for(int y = 0; y < this.height; y++)
         {
             builder.append(array[y]);
